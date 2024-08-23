@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: rgb(0, 0, 0);
+    padding: 16px 0;
+    color: rgb(255, 47, 47);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a {
+    color: rgb(255, 82, 82);
+    text-decoration: none;
+}
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.articles article img {
+    /* height: 180px; */
+    width: 100%;
+}
+
+.articles article {
+    width: 30%;
+}
+
+section {
+    padding: 16px 0;
+}
+
+/* Criamos uma margem inferior nas sessões Esportes e Economia e reaproveitamos para fazer o mesmo selecionando os articles para ter espaços entre si  */
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+/* Criamos uma margem superior e inferior nos titulos de noticias  */
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+    /* Estilizamos a cor do "Ler mais" e sua cor de fundo.
+    Após isso criamos um espaçamento e uma quebra para não sobrepor a descrição acima.
+    Removemos o underline do "ler mais". 
+    Deixamos em negrito e adicionamos um espaço de 8 pixels no topo.*/
+.articles article a {
+    background-color: rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+/* Agora adicionamos um efeito que aparece o underline no "Ler mais" ao passar o mouse por cima */
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+/* No titulo da noticia e em suas descrições mudamos a fonte */
+.articles article p 
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Aumentamos a fonte do titulo para chamar mais atenção */
+.articles article h3 {
+    font-size: 24px;
+}
+
+/* Fazemos o mesmo aumento proporcional para as sessões */
+section h2 {
+    font-size: 32px;
+}
+
+#politics {
+    background-color: rgba(36, 39, 44, 0.233);
+}
+
+#politics .articles article a {
+    background-color: rgb(26, 29, 32);
+}
+
+#sports {
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a {
+    background-color: seagreen;
+}
+
+#economy {
+    background-color: rgba(255, 166, 0, 0.274);
+}
+
+#economy .articles article a {
+    background-color: rgb(150, 112, 41);
+}
+
+#culture {
+    background-color: rgba(255, 98, 87, 0.233);
+}
+
+#culture .articles article a {
+    background-color: rgb(66, 10, 10);
+}
